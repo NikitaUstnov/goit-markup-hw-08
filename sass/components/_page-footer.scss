@@ -1,0 +1,32 @@
+/*Задание фона футеру*/
+.footer-site {
+    background-color: $footer-bgr-color;
+}
+
+/*делаем обертки внутри футера флекс элементами и выравниваем их*/
+.footer-flex-container {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // align-items: baseline;
+
+    // & div:not(:last-child) {
+    //     margin-bottom: 60px;
+    // }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        align-items: baseline;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+}

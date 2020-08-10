@@ -1,0 +1,56 @@
+/*класс для того чтобы отодвинуть блок "Присоеденяйтесь"*/
+.footer-join-us {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    /*класс для того чтобы отодвинуть список иконок от заголовка*/
+    &-list {
+        margin-top: 20px;
+    }
+
+    /*класс для выравнивания иконок*/
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*класс для того чтобы убрать крайнюю геометрию у иконок*/
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    @media screen and(min-width: 768px) {
+        margin-top: 5px;
+        margin-right: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 69px;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
+
+/*Класс для белого заголовка в футере*/
+.footer-header-join-us {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $alternative-text-color;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+/*Класс для того, чтобы иконки соцсетей стали флекс-элементами*/
+.social-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
